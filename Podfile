@@ -8,6 +8,9 @@ target 'Insta' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'SDWebImage/WebP'
+  pod 'IQKeyboardManager'
+  pod 'MBProgressHUD', '~> 1.0.0'
 
   # Pods for Insta
 

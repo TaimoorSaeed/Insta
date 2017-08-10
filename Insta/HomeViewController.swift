@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class HomeViewController: UIViewController {
     
@@ -17,6 +18,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        SDWebImageManager.shared().delegate = self
+  
         let ref = Database.database().reference()
         ref.child("posts/\(Auth.auth().currentUser!.uid)").observe(.childAdded, with: { (snapshot) in
             
@@ -42,7 +46,6 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
 }
 
 extension HomeViewController: UITableViewDataSource , UITableViewDelegate {
@@ -54,10 +57,18 @@ extension HomeViewController: UITableViewDataSource , UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let post = self.posts[indexPath.row]
+        
+        cell.imageViewCell.sd_setShowActivityIndicatorView(true)
+        cell.imageViewCell.sd_setIndicatorStyle(.gray)
         cell.captionLabel.text = post.text
         let url = URL(string: post.imageURL)
-        let data = try? Data(contentsOf: url!)
-        cell.imageViewCell?.image = UIImage(data: data!)
+//        let data = try? Data(contentsOf: url!)
+//        cell.imageViewCell?.image = UIImage(data: data!)
+        
+        cell.imageViewCell.sd_setImage(with: url)
+        
+//        cell.imageView?
+        
         
         return cell
     }

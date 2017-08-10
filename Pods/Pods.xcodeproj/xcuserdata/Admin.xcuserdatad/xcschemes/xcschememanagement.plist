@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Insta.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,6 +39,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>libwebp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,7 +57,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>279AA6726F52A334C45E85774BD21A3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>624C5A9D7E41DE757CEDA330D7C13308</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9700DD717F9FC3601B91351419F2213F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB5C68532C1A0B6BBC731D9FAD31D752</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B96C7A093CD7A738C9320DA83CCEFC74</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,11 +93,6 @@
 			<true/>
 		</dict>
 		<key>D97161477D14A0D38F46ECBDBF49BD2C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EBB0E61329D2025456A092C4D17A666A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
