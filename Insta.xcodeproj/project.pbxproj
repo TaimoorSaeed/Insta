@@ -284,6 +284,7 @@
 				TargetAttributes = {
 					8496E7611F22001200CCD535 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GB5JX3BE5S;
 						ProvisioningStyle = Automatic;
 					};
 					8496E7751F22001200CCD535 = {
@@ -648,6 +649,7 @@
 			baseConfigurationReference = FBE13EE44EF444A582CDA461 /* Pods-Insta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GB5JX3BE5S;
 				INFOPLIST_FILE = Insta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taimoor.Insta;
@@ -661,6 +663,7 @@
 			baseConfigurationReference = 58E2EF508DDB981D7759219D /* Pods-Insta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GB5JX3BE5S;
 				INFOPLIST_FILE = Insta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taimoor.Insta;
