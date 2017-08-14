@@ -441,7 +441,7 @@ Copyright 2017 Google
    limitations under the License.
 
 
-## IQKeyboardManager
+## IQKeyboardManagerSwift
 
 IQKeyboardManager license
 =========================

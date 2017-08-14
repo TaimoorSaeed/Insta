@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1806DC9093F2D4ED0AE199CB07E5D8EB'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = 'C235F77E101E742652CCF98FFDFA5182'
+               BlueprintName = 'IQKeyboardManagerSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SDWebImage.framework'>
+               BuildableName = 'IQKeyboardManagerSwift.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

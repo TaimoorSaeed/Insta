@@ -40,7 +40,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
-  - IQKeyboardManager (4.0.10)
+  - IQKeyboardManagerSwift (4.0.10)
   - libwebp (0.6.0):
     - libwebp/core (= 0.6.0)
     - libwebp/dec (= 0.6.0)
@@ -76,7 +76,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - IQKeyboardManager
+  - IQKeyboardManagerSwift
   - MBProgressHUD (~> 1.0.0)
   - SDWebImage/WebP
 
@@ -90,11 +90,11 @@ SPEC CHECKSUMS:
   FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
-  IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   libwebp: 1d5a07c2eb97f9c31bd5f154bb82efc0ea67c6a2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 5063d14f7c6b8605cd0958cf0ca42748ec37114e
+PODFILE CHECKSUM: 31fea5220ca065f0508ac54d1f5e7d965fa91d03
 
 COCOAPODS: 1.2.1

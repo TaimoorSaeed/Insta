@@ -11,7 +11,7 @@ import Firebase
 import FirebaseStorage
 import MBProgressHUD
 
-class ImageViewController: UIViewController ,UIImagePickerControllerDelegate, UINavigationControllerDelegate , UITextFieldDelegate{
+class ImageViewController: UIViewController ,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     var kbHeight: CGFloat = 0.0
     
@@ -24,8 +24,6 @@ class ImageViewController: UIViewController ,UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
         self.hideKeyboard()
         imagePicker.delegate = self
-        
-       
     }
     
     @IBAction func loadImagePressed(_ sender: AnyObject) {
@@ -55,10 +53,9 @@ class ImageViewController: UIViewController ,UIImagePickerControllerDelegate, UI
             return
         }
         
-        //show hud
-        
+       
         let loadingNotification = MBProgressHUD.showAdded(to: self.view, animated: true)
-        loadingNotification.mode = MBProgressHUDMode.indeterminate
+       loadingNotification.mode = MBProgressHUDMode.indeterminate
         loadingNotification.label.text = "Uploading"
         
         let ref = Database.database().reference()

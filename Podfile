@@ -9,7 +9,7 @@ target 'Insta' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'SDWebImage/WebP'
-  pod 'IQKeyboardManager'
+  pod 'IQKeyboardManagerSwift'
   pod 'MBProgressHUD', '~> 1.0.0'
 
   # Pods for Insta

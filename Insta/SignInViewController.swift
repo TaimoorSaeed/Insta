@@ -9,21 +9,15 @@
 import UIKit
 import FirebaseAuth
 
-class SignInViewController: UIViewController {
-    
-    
+class SignInViewController: UIViewController,UITextFieldDelegate{
     
     @IBOutlet weak var emailTextFeild: UITextField!
     @IBOutlet weak var passwordTextFeild: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboard()
-        
+//        self.hideKeyboard()
     }
-    
-    
     
     @IBAction func signInPressed(_ sender: AnyObject) {
         

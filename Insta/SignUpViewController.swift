@@ -19,7 +19,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
-        
     }
     
     @IBAction func signUpPressed(_ sender: AnyObject) {
