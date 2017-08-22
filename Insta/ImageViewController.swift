@@ -86,7 +86,10 @@ class ImageViewController: UIViewController ,UIImagePickerControllerDelegate, UI
             
                 
                 MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
-                self.dismiss(animated: true, completion: nil)
+//                self.dismiss(animated: true, completion: nil)
+                
+                let vc  = self.storyboard?.instantiateViewController(withIdentifier: "home")
+                self.navigationController!.pushViewController(vc!, animated: true)
             }
             
         }

@@ -40,7 +40,8 @@ class HomeViewController: UIViewController {
                 try Auth.auth().signOut()
                 print("logged out")
                 let vc  = self.storyboard?.instantiateViewController(withIdentifier: "signIn")
-                self.present(vc!, animated: true, completion: nil)
+//                self.present(vc!, animated: true, completion: nil)
+                self.navigationController!.pushViewController(vc!, animated: true)
             } catch let error as NSError {
                 print(error.localizedDescription)
             }

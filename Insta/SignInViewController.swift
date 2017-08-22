@@ -14,6 +14,10 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var emailTextFeild: UITextField!
     @IBOutlet weak var passwordTextFeild: UITextField!
     
+    @IBAction func prepareForUnWind(sender: UIStoryboardSegue){
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
@@ -26,7 +30,7 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     @IBAction func signInPressed(_ sender: AnyObject) {
@@ -50,7 +54,8 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
                     print("You have sucessfully logged in")
                     
                     let vc  = self.storyboard?.instantiateViewController(withIdentifier: "home")
-                    self.present(vc!, animated: true, completion: nil)
+//                    self.present(vc!, animated: true, completion: nil)
+                    self.navigationController!.pushViewController(vc!, animated: true)
                     
                     
                 } else {
