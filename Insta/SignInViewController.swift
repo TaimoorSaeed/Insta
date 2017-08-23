@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import MBProgressHUD
 
 class SignInViewController: UIViewController,UITextFieldDelegate{
     
@@ -47,6 +48,9 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
         }
             
         else {
+            let loadingNotification = MBProgressHUD.showAdded(to: self.view, animated: true)
+            loadingNotification.mode = MBProgressHUDMode.indeterminate
+            loadingNotification.label.text = "Signing In"
             
             _ = Auth.auth().signIn(withEmail: self.emailTextFeild.text!, password: self.passwordTextFeild.text!) { (user , error) in
                 
@@ -55,6 +59,7 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
                     
                     let vc  = self.storyboard?.instantiateViewController(withIdentifier: "home")
 //                    self.present(vc!, animated: true, completion: nil)
+                    MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
                     self.navigationController!.pushViewController(vc!, animated: true)
                     
                     

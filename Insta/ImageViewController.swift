@@ -24,6 +24,8 @@ class ImageViewController: UIViewController ,UIImagePickerControllerDelegate, UI
         super.viewDidLoad()
         self.hideKeyboard()
         imagePicker.delegate = self
+//        self.navigationController?.navigationBar.tintColor = UIColor(red:0.90, green:0.45, blue:0.45, alpha:1.0)
+        
     }
     
     @IBAction func loadImagePressed(_ sender: AnyObject) {

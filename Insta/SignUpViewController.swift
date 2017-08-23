@@ -19,6 +19,8 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
+        self.navigationController?.navigationBar.tintColor = UIColor(red:0.90, green:0.45, blue:0.45, alpha:1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(red:0.90, green:0.45, blue:0.45, alpha:1.0)]
     }
     
     @IBAction func signUpPressed(_ sender: AnyObject) {

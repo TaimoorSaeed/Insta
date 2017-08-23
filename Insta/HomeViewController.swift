@@ -18,8 +18,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        SDWebImageManager.shared().delegate = self
+        self.navigationItem.setHidesBackButton(true, animated:true);
+        self.navigationController?.navigationBar.tintColor = UIColor(red:0.90, green:0.45, blue:0.45, alpha:1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(red:0.90, green:0.45, blue:0.45, alpha:1.0)]
   
         let ref = Database.database().reference()
         ref.child("posts/\(Auth.auth().currentUser!.uid)").observe(.childAdded, with: { (snapshot) in
