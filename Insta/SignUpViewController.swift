@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import MBProgressHUD
 
 class SignUpViewController: UIViewController {
     
@@ -41,6 +42,9 @@ class SignUpViewController: UIViewController {
         }
             
         else {
+            let loadingNotification = MBProgressHUD.showAdded(to: self.view, animated: true)
+            loadingNotification.mode = MBProgressHUDMode.indeterminate
+            loadingNotification.label.text = "Signing Up"
             
             _ = Auth.auth().createUser(withEmail: self.emailTextFeild.text!, password: self.passwordTextFeild.text!) { (user , error) in
                 
@@ -53,10 +57,11 @@ class SignUpViewController: UIViewController {
                     let vc  = self.storyboard?.instantiateViewController(withIdentifier: "signIn")
 //                    self.present(vc!, animated: true, completion: nil)
                     self.navigationController!.pushViewController(vc!, animated: true)
-//                    MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+                    MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
                     
                     
                 } else {
+                     MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
