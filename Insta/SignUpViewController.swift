@@ -47,15 +47,13 @@ class SignUpViewController: UIViewController {
                 if error == nil {
                     print("You have sucessfully signed up")
                     
-//                    ref.child("users").child(user!.uid).setValue(["name": self.emailTextFeild.text!])
-                    
                     ref.child("users").child((user?.uid)!).setValue(["name": self.emailTextFeild.text!])
-                    
-//                    self.ref.child("users/(user.uid)).childByAutoId.setValue(["name": self.emailTextFeild.text!])
                     
                     
                     let vc  = self.storyboard?.instantiateViewController(withIdentifier: "signIn")
-                    self.present(vc!, animated: true, completion: nil)
+//                    self.present(vc!, animated: true, completion: nil)
+                    self.navigationController!.pushViewController(vc!, animated: true)
+//                    MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
                     
                     
                 } else {

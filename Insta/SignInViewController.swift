@@ -64,6 +64,7 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
                     
                     
                 } else {
+                    MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
