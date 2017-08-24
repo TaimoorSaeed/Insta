@@ -62,16 +62,10 @@ extension HomeViewController: UITableViewDataSource , UITableViewDelegate {
         
         cell.imageViewCell.sd_setShowActivityIndicatorView(true)
         cell.imageViewCell.sd_setIndicatorStyle(.gray)
+        
         cell.captionLabel.text = post.text
         let url = URL(string: post.imageURL)
-//        let data = try? Data(contentsOf: url!)
-//        cell.imageViewCell?.image = UIImage(data: data!)
-        
         cell.imageViewCell.sd_setImage(with: url)
-        
-//        cell.imageView?
-        
-        
         return cell
     }
     

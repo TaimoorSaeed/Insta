@@ -201,7 +201,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="235"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DWo-6p-xlS" id="7yx-uf-Zr5">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="234.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtB-k9-L2w">
@@ -295,13 +295,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-1s-8qz">
-                                <rect key="frame" x="16" y="28" width="288" height="291"/>
+                                <rect key="frame" x="16" y="28" width="288" height="262"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="291" id="rCP-aG-Izs"/>
+                                    <constraint firstAttribute="height" constant="262" id="rCP-aG-Izs"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtM-zC-ekv">
-                                <rect key="frame" x="16" y="351" width="288" height="30"/>
+                                <rect key="frame" x="16" y="310" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mac-6t-fuX"/>
                                 </constraints>
@@ -310,7 +310,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig7-Xb-8Kg">
-                                <rect key="frame" x="67" y="410" width="186" height="30"/>
+                                <rect key="frame" x="67" y="369" width="186" height="30"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Load Image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -321,7 +321,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfF-X4-i8y">
-                                <rect key="frame" x="67" y="466" width="186" height="30"/>
+                                <rect key="frame" x="67" y="425" width="186" height="30"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,7 +342,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="IfF-X4-i8y" secondAttribute="trailing" constant="51" id="MDX-nY-ugl"/>
                             <constraint firstItem="Ig7-Xb-8Kg" firstAttribute="top" secondItem="qtM-zC-ekv" secondAttribute="bottom" constant="29" id="NZ4-hs-UW3"/>
                             <constraint firstItem="qtM-zC-ekv" firstAttribute="leading" secondItem="O6e-6l-jmS" secondAttribute="leadingMargin" id="Wy7-Qb-7j8"/>
-                            <constraint firstItem="qtM-zC-ekv" firstAttribute="top" secondItem="YVJ-1s-8qz" secondAttribute="bottom" constant="32" id="b3u-2h-L63"/>
+                            <constraint firstItem="qtM-zC-ekv" firstAttribute="top" secondItem="YVJ-1s-8qz" secondAttribute="bottom" constant="20" id="b3u-2h-L63"/>
                             <constraint firstItem="Ig7-Xb-8Kg" firstAttribute="leading" secondItem="O6e-6l-jmS" secondAttribute="leadingMargin" constant="51" id="c2i-Hb-UxP"/>
                             <constraint firstItem="IfF-X4-i8y" firstAttribute="top" secondItem="Ig7-Xb-8Kg" secondAttribute="bottom" constant="26" id="gL3-eb-z2V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ig7-Xb-8Kg" secondAttribute="trailing" constant="51" id="lfW-0a-WEA"/>
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6q-uB-Ubu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5059" y="146"/>
+            <point key="canvasLocation" x="5058.75" y="145.77464788732394"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d5t-hi-jTv">
