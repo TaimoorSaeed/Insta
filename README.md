@@ -1,9 +1,9 @@
 # Insta
 
-![](SignIn.png)
-![](SignUp.png)
-![](SignIn Loader.png)
-![](Home.png)
-![](ImageUploading.png)
-![](ImageUploading Loader.png)
+![](SignIn.PNG)
+![](SignUp.PNG)
+![](SignIn Loader.PNG)
+![](Home.PNG)
+![](ImageUploading.PNG)
+![](ImageUploading Loader.PNG)
 
